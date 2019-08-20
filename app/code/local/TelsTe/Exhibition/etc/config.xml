@@ -1,0 +1,18 @@
+<config>
+    <modules>
+        <TelsTe_Exhibition>
+            <version>0.1.1</version>
+        </TelsTe_Exhibition>
+    </modules>
+    <frontend>
+        <routers>
+            <exhibition>
+                <use>standard</use>
+                <args>
+                    <module>TelsTe_Exhibition</module>
+                    <frontName>exhibition</frontName>
+                </args>
+            </exhibition>
+        </routers>
+    </frontend>
+    </config>

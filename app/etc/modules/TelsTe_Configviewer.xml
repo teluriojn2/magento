@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <tels_te_Configviewer>
+        <active>true</active>
+        <codePool>local</codePool>
+        </tels_te_Configviewer>
+    </modules>
+</config>

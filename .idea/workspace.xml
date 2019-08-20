@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d3d383b-98b8-4fbe-863e-7215b22827cc" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - magento@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XSLT Stylesheet" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="~^(www\.)?(?&lt;sname&gt;.+?).loc$" id="ae1092ef-a391-45d7-98ed-569f156f740e" name="~^(www\.)?(?&lt;sname&gt;.+?).loc$" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/usr/share/nginx/html/magento" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="ProjectId" id="1PL5Wvh86dgBhCdP4vLzEhcnNrx" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/skin/frontend/base/default/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/code/local/Magentotutorial/Complexworld/sql/complexworld_setup" />
+      <recent name="$PROJECT_DIR$/app/code/local/Magentotutorial/Complexworld/Model" />
+      <recent name="$PROJECT_DIR$/app/code/local/Magentotutorial/Complexworld/Model/Resource" />
+      <recent name="$PROJECT_DIR$/app/code/local/Magentotutorial/Weblog/Model/Resource" />
+      <recent name="$PROJECT_DIR$/app/code/local/Magentotutorial/Weblog/Model/Resource/Blogpost" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/skin/frontend/base/default/images" />
+      <recent name="$PROJECT_DIR$/skin/frontend/base/default/css" />
+      <recent name="$PROJECT_DIR$/skin/adminhtml/default/default" />
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/app/design/frontend/base/default/template" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="IndexController.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/code/local/Magentotutorial/Helloworld/controllers/IndexController.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.IndexController.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@63afb956" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d3d383b-98b8-4fbe-863e-7215b22827cc" name="Default Changelist" comment="" />
+      <created>1565640571099</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565640571099</updated>
+      <workItem from="1565640575903" duration="1233000" />
+      <workItem from="1565700761504" duration="16761000" />
+      <workItem from="1565785785626" duration="21460000" />
+      <workItem from="1566215699469" duration="21394000" />
+      <workItem from="1566247506733" duration="31000" />
+      <workItem from="1566302136711" duration="3876000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="202" width="616" height="390" key="#com.intellij.fileTypes.FileTypeChooser" />
+    <state x="418" y="202" width="616" height="390" key="#com.intellij.fileTypes.FileTypeChooser/1366.768/1368.768" />
+    <state x="512" y="322" key="NewPhpFileDialog" />
+    <state x="512" y="322" key="NewPhpFileDialog/1366.768/1368.768" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/1366.768/1368.768" />
+    <state x="378" y="72" width="709" height="681" key="find.popup" />
+    <state x="378" y="72" width="709" height="681" key="find.popup/1366.768/1368.768" />
+  </component>
+</project>

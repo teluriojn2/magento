@@ -1,0 +1,29 @@
+<layout version="0.1.0">
+    <MEU_HANDLE_COM_NOME_DIFERENTE_DE_TODOS_OS_OUTROS>
+        <block name="a" template="batatatinha.phtml"></block>
+        <block name="b"></block>
+        <block name="c"></block>
+    </MEU_HANDLE_COM_NOME_DIFERENTE_DE_TODOS_OS_OUTROS>
+
+    <cms_index_index>
+        <update handle="MEU_HANDLE_COM_NOME_DIFERENTE_DE_TODOS_OS_OUTROS" />
+    </cms_index_index>
+    <batata_index_index>
+        <update handle="MEU_HANDLE_COM_NOME_DIFERENTE_DE_TODOS_OS_OUTROS" />
+    </batata_index_index>
+    <panda_index_index>
+        <update handle="MEU_HANDLE_COM_NOME_DIFERENTE_DE_TODOS_OS_OUTROS" />
+    </panda_index_index>
+    <helloworld_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>magentotutorial/helloworld/simple_page.phtml</template>
+            </action>
+            <block type="page/template_links" name="top.links"/>
+            <block type="customer/form_register" name="customer_form_register" template="customer/form/register.phtml"/>
+        </reference>
+    </helloworld_index_index>
+    <helloworld_index_goodbye>
+        <update handle ="helloworld_index_index"/>
+    </helloworld_index_goodbye>
+</layout>

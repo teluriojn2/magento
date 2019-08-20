@@ -1,0 +1,20 @@
+<config>
+    <modules>
+        <tels_te_Configviewer>
+            <version>0.1.0</version>
+        </tels_te_Configviewer>
+    </modules>
+    <global>
+        <events>
+            <controller_front_init_routers>
+                <observers>
+                    <tels_te_configviewer_model_observer>
+                        <type>singleton</type>
+                        <class>tels_te_Configviewer_Model_observer</class>
+                        <method>checkForConfigRequest</method>
+                    </tels_te_configviewer_model_observer>
+                </observers>
+            </controller_front_init_routers>
+        </events>
+    </global>
+</config>

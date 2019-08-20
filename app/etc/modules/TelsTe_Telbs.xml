@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <TelsTe_Telbs>
+            <active>true</active>
+            <codePool>local</codePool>
+        </TelsTe_Telbs>
+    </modules>
+</config>
