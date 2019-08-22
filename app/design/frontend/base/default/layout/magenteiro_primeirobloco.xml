@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="top.container">
+            <block name="helloworld" type="magenteiro_primeirobloco/hello" template="meuprimeirobloco/world.phtml"/>
+        </reference>
+    </default>
+    <catalog_product_view>
+        <reference name="head">
+            <action method="addItem">
+                <dadsfsf>skin_css</dadsfsf>
+                <dsdsds>meuprimeirobloco/teste.css</dsdsds>
+            </action>
+        </reference>
+    </catalog_product_view>
+</layout>

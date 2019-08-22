@@ -1,0 +1,18 @@
+<config>
+    <modules>
+        <Telbs_Integrations>
+            <version>1.0.0</version>
+        </Telbs_Integrations>
+    </modules>
+    <frontend>
+        <routers>
+            <integrations>
+                <use>standard</use>
+                <args>
+                    <module>Telbs_Integration</module>
+                    <frontName>integrations</frontName>
+                </args>
+            </integrations>
+        </routers>
+    </frontend>
+</config>

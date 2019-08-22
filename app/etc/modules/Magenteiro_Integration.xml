@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magenteiro_Integration>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Magenteiro_Integration>
+    </modules>
+</config>

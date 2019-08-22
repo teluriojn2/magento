@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Telbs_AddCart>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Telbs_AddCart>
+    </modules>
+</config>

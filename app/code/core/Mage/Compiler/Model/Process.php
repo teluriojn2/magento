@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Compiler
- * @copyright  Copyright (c) 2006-2019 Magento, Inc. (http://www.magento.com)
+ * @copyright  Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -42,9 +42,6 @@ class Mage_Compiler_Model_Process
     protected $_processedClasses= array();
 
     protected $_controllerFolders = array();
-
-    /** $_collectLibs library list array */
-    protected $_collectLibs = array();
 
     public function __construct($options=array())
     {
@@ -130,9 +127,6 @@ class Mage_Compiler_Model_Process
             if (strpos(str_replace($this->_includeDir, '', $target), '-')
                 || !in_array(substr($source, strlen($source)-4, 4), array('.php'))) {
                 return $this;
-            }
-            if (!$firstIteration && stripos($source, Mage::getBaseDir('lib') . DS) !== false) {
-                $this->_collectLibs[] = $target;
             }
             copy($source, $target);
         }
@@ -347,11 +341,6 @@ class Mage_Compiler_Model_Process
     {
         $sortedClasses = array();
         foreach ($classes as $className) {
-            /** Skip iteration if this class has already been moved to the includes folder from the lib */
-            if (array_search($this->_includeDir . DS . $className . '.php', $this->_collectLibs)) {
-                continue;
-            }
-
             $implements = array_reverse(class_implements($className));
             foreach ($implements as $class) {
                 if (!in_array($class, $sortedClasses) && !in_array($class, $this->_processedClasses) && strstr($class, '_')) {

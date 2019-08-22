@@ -1,0 +1,44 @@
+<config>
+    <tabs>
+        <telste>
+            <label>Telste</label>
+            <short_order>10</short_order>
+        </telste>
+    </tabs>
+    <sections>
+        <configs>
+            <label>Configuração</label>
+            <tab>telste</tab>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <visual>
+                    <label>Configurações Visuais</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <habilitado>
+                            <label>Exibição</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>10</sort_order>
+                        </habilitado>
+                        <exibir>
+                            <label>Texto</label>
+                            <comment>Texto que será exibido.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>20</sort_order>
+                        </exibir>
+                    </fields>
+                </visual>
+            </groups>
+        </configs>
+    </sections>
+</config>

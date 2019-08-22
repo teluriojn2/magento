@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magenteiro_IntegrationApi>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Magenteiro_Integration/>
+            </depends>
+        </Magenteiro_IntegrationApi>
+    </modules>
+</config>

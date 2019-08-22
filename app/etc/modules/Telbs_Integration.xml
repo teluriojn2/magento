@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Telbs_Integration>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Telbs_Integration>
+    </modules>
+</config>

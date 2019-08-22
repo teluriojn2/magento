@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+    <api>
+        <resources>
+            <magenteiro_integration>
+                <model>magenteiro_integrationapi/api</model>
+                <title>Magenteiro Integration</title>
+                <model>magenteiro_integrationapi/api</model>
+                <acl>magenteiro_integration</acl>
+                <methods>
+                    <list><!--Nome do método na api soap v1-->
+                        <title>Lista registros</title>
+                        <method>listIntegrations</method><!--nome do método dentro do model-->
+                        <acl>magenteiro_integration/list</acl>
+                    </list>
+                </methods>
+                <faults>
+                    <empty_search>
+                        <code>101</code>
+                        <message>Invalid Search: search string is empty</message>
+                    </empty_search>
+                </faults>
+            </magenteiro_integration>
+        </resources>
+        <resource_alias>
+            <magenteiro_integration>magenteiro_integration</magenteiro_integration>
+        </resource_alias>
+        <v2>
+            <resources_function_prefix>
+                <magenteiro_integration>magenteiroIntegration</magenteiro_integration><!--Prefixo do nome do método na api soap v2-->
+            </resources_function_prefix>
+        </v2>
+        <acl>
+            <resources>
+                <magenteiro_integration module="magenteiro_integration">
+                    <title>Magenteiro Integration</title>
+                    <sort_order>1</sort_order>
+                </magenteiro_integration>
+            </resources>
+        </acl>
+    </api>
+</config>

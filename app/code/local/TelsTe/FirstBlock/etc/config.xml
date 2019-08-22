@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TelsTe_FirstBlock>
+            <version>1.0.0</version>
+        </TelsTe_FirstBlock>
+    </modules>
+    <global>
+        <blocks>
+        <telste_firstblock>
+            <class>TelsTe_FirstBlock_Block</class>
+        </telste_firstblock>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <telste_fisrtblock>
+                    <file>telste_firstblock.xml</file>
+                </telste_fisrtblock>
+            </updates>
+        </layout>
+    </frontend>
+</config>

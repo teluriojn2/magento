@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <AprendaMagento_AddToCart>
+            <active>true</active>
+            <codePool>community</codePool>
+        </AprendaMagento_AddToCart>
+    </modules>
+</config>

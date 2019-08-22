@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Core
- * @copyright  Copyright (c) 2006-2019 Magento, Inc. (http://www.magento.com)
+ * @copyright  Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -254,7 +254,7 @@ class Mage_Core_Helper_Data extends Mage_Core_Helper_Abstract
             $chars = self::CHARS_LOWERS . self::CHARS_UPPERS . self::CHARS_DIGITS;
         }
         for ($i = 0, $str = '', $lc = strlen($chars)-1; $i < $len; $i++) {
-            $str .= $chars[random_int(0, $lc)];
+            $str .= $chars[mt_rand(0, $lc)];
         }
         return $str;
     }
@@ -651,30 +651,11 @@ XML;
      * Decodes the given $encodedValue string which is
      * encoded in the JSON format
      *
-     * switch added to prevent exceptions in json_decode
-     *
      * @param string $encodedValue
      * @return mixed
      */
     public function jsonDecode($encodedValue, $objectDecodeType = Zend_Json::TYPE_ARRAY)
     {
-        switch (true) {
-            case (null === $encodedValue):
-                $encodedValue = 'null';
-                break;
-            case (true === $encodedValue):
-                $encodedValue = 'true';
-                break;
-            case (false === $encodedValue):
-                $encodedValue = 'false';
-                break;
-            case ('' === $encodedValue):
-                $encodedValue = '""';
-                break;
-            default:
-                // do nothing
-        }
-
         return Zend_Json::decode($encodedValue, $objectDecodeType);
     }
 

@@ -1,0 +1,14 @@
+Exemplos disponibilizados para alunos e usuários do Magenteiro.com.
+Para mais informações sobre a utilização da API e algumas dicas, assista https://youtu.be/Gwp6lXTshlc
+
+Documentação da API
+http://devdocs.magento.com/guides/m1x/api/soap/introduction.html
+
+Suporte
+Como aluno do Magenteiro você tem suporte sobre o conteúdo das aulas no grupo secreto do facebook.
+O fim do suporte e começo de uma consultoria está no seu bom senso. Seja bacana. ;)
+
+
+Grande abraço e boa integração,
+Ricardo Martins
+www.magenteiro.com/backend

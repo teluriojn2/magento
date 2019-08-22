@@ -1,0 +1,25 @@
+<config>
+    <modules>
+        <Telbs_AddCart>
+            <version>1.0.0</version>
+        </Telbs_AddCart>
+    </modules>
+    <global>
+    <helpers>
+        <telbs_addcart1>
+            <class>Telbs_AddCart_Helper</class>
+        </telbs_addcart1>
+    </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <telbs_addcart>
+                <use>standard</use>
+                <args>
+                    <module>Telbs_AddCart</module>
+                    <frontName>addcart</frontName>
+                </args>
+            </telbs_addcart>
+        </routers>
+    </frontend>
+</config>

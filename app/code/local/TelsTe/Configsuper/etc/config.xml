@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TelsTe_Configsuper>
+            <version>1.0.0</version>
+        </TelsTe_Configsuper>
+    </modules>
+    <global>
+
+    </global>
+    <default>
+        <configs>
+            <visual>
+                <exibir>Inicio</exibir>
+            </visual>
+        </configs>
+    </default>
+</config>

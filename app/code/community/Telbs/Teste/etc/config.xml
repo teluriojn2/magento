@@ -1,0 +1,18 @@
+<config>
+    <modules>
+        <TelsTe_Teste>
+            <version>0.1.0</version>
+        </TelsTe_Teste>
+    </modules>
+    <frontend>
+        <routers>
+            <teste>
+                <use>standard</use>
+                <args>
+                    <module>Telbs_Teste</module>
+                    <frontName>teste</frontName>
+                </args>
+            </teste>
+        </routers>
+    </frontend>
+</config>

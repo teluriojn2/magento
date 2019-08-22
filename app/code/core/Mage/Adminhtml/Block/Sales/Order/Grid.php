@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Adminhtml
- * @copyright  Copyright (c) 2006-2019 Magento, Inc. (http://www.magento.com)
+ * @copyright  Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -65,11 +65,10 @@ class Mage_Adminhtml_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_Widget_
     {
 
         $this->addColumn('real_order_id', array(
-            'header' => Mage::helper('sales')->__('Order #'),
-            'width'  => '80px',
-            'type'   => 'text',
-            'index'  => 'increment_id',
-            'escape' => true,
+            'header'=> Mage::helper('sales')->__('Order #'),
+            'width' => '80px',
+            'type'  => 'text',
+            'index' => 'increment_id',
         ));
 
         if (!Mage::app()->isSingleStoreMode()) {
@@ -79,7 +78,6 @@ class Mage_Adminhtml_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_Widget_
                 'type'      => 'store',
                 'store_view'=> true,
                 'display_deleted' => true,
-                'escape'  => true,
             ));
         }
 

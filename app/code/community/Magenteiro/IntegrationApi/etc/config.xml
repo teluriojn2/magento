@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magenteiro_IntegrationApi>
+            <version>1.0.0</version>
+        </Magenteiro_IntegrationApi>
+    </modules>
+    <global>
+        <models>
+            <magenteiro_integrationapi>
+                <class>Magenteiro_IntegrationApi_Model</class>
+            </magenteiro_integrationapi>
+        </models>
+    </global>
+</config>

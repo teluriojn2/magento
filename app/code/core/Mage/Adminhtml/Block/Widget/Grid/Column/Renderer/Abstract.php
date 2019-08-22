@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Adminhtml
- * @copyright  Copyright (c) 2006-2019 Magento, Inc. (http://www.magento.com)
+ * @copyright  Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -114,9 +114,9 @@ abstract class Mage_Adminhtml_Block_Widget_Grid_Column_Renderer_Abstract
             }
             $out = '<a href="#" name="' . $this->getColumn()->getId() . '" title="' . $nDir
                    . '" class="' . $className . '"><span class="sort-title">'
-                   . $this->escapeHtml($this->getColumn()->getHeader()) . '</span></a>';
+                   . $this->getColumn()->getHeader().'</span></a>';
         } else {
-            $out = $this->escapeHtml($this->getColumn()->getHeader());
+            $out = $this->getColumn()->getHeader();
         }
         return $out;
     }

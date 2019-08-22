@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Checkout
- * @copyright  Copyright (c) 2006-2019 Magento, Inc. (http://www.magento.com)
+ * @copyright  Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -58,9 +58,6 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
     {
         parent::preDispatch();
         $this->_preDispatchValidateCustomer();
-
-        // Disable flat for product collection
-        Mage::helper('catalog/product_flat')->disableFlatCollection(true);
 
         $checkoutSessionQuote = Mage::getSingleton('checkout/session')->getQuote();
         if ($checkoutSessionQuote->getIsMultiShipping()) {
@@ -352,7 +349,6 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
         if ($this->_expireAjax()) {
             return;
         }
-
         if ($this->getRequest()->isPost()) {
             $method = $this->getRequest()->getPost('method');
             $result = $this->getOnepage()->saveCheckoutMethod($method);
@@ -368,11 +364,6 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
         if ($this->_expireAjax()) {
             return;
         }
-
-        if ($this->isFormkeyValidationOnCheckoutEnabled() && !$this->_validateFormKey()) {
-            return;
-        }
-
         if ($this->getRequest()->isPost()) {
             $data = $this->getRequest()->getPost('billing', array());
             $customerAddressId = $this->getRequest()->getPost('billing_address_id', false);
@@ -415,11 +406,6 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
         if ($this->_expireAjax()) {
             return;
         }
-
-        if ($this->isFormkeyValidationOnCheckoutEnabled() && !$this->_validateFormKey()) {
-            return;
-        }
-
         if ($this->getRequest()->isPost()) {
             $data = $this->getRequest()->getPost('shipping', array());
             $customerAddressId = $this->getRequest()->getPost('shipping_address_id', false);
@@ -444,11 +430,6 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
         if ($this->_expireAjax()) {
             return;
         }
-
-        if ($this->isFormkeyValidationOnCheckoutEnabled() && !$this->_validateFormKey()) {
-            return;
-        }
-
         if ($this->getRequest()->isPost()) {
             $data = $this->getRequest()->getPost('shipping_method', '');
             $result = $this->getOnepage()->saveShippingMethod($data);
@@ -483,11 +464,6 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
         if ($this->_expireAjax()) {
             return;
         }
-
-        if ($this->isFormkeyValidationOnCheckoutEnabled() && !$this->_validateFormKey()) {
-            return;
-        }
-
         try {
             if (!$this->getRequest()->isPost()) {
                 $this->_ajaxRedirectResponse();
@@ -565,7 +541,7 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
      */
     public function saveOrderAction()
     {
-        if ($this->isFormkeyValidationOnCheckoutEnabled() && !$this->_validateFormKey()) {
+        if (!$this->_validateFormKey()) {
             $this->_redirect('*/*');
             return;
         }

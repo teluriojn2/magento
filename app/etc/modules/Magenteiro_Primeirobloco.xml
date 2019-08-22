@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magenteiro_Primeirobloco>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Magenteiro_Primeirobloco>
+    </modules>
+</config>

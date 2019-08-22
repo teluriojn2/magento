@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Catalog
- * @copyright  Copyright (c) 2006-2019 Magento, Inc. (http://www.magento.com)
+ * @copyright  Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -35,7 +35,7 @@
 class Mage_Catalog_Helper_Data extends Mage_Core_Helper_Abstract
 {
     const PRICE_SCOPE_GLOBAL               = 0;
-    const PRICE_SCOPE_WEBSITE              = 0;
+    const PRICE_SCOPE_WEBSITE              = 1;
     const XML_PATH_PRICE_SCOPE             = 'catalog/price/scope';
     const XML_PATH_SEO_SAVE_HISTORY        = 'catalog/seo/save_rewrites_history';
     const CONFIG_USE_STATIC_URLS           = 'cms/wysiwyg/use_static_urls_in_catalog';

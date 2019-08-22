@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magenteiro_Primeirobloco>
+            <version>1.0.0</version>
+        </Magenteiro_Primeirobloco>
+    </modules>
+    <global>
+        <blocks>
+            <magenteiro_primeirobloco>
+                <class>Magenteiro_Primeirobloco_Block</class>
+            </magenteiro_primeirobloco>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <magenteiro_primeirobloco>
+                    <file>magenteiro_primeirobloco.xml</file>
+                </magenteiro_primeirobloco>
+            </updates>
+        </layout>
+    </frontend>
+</config>

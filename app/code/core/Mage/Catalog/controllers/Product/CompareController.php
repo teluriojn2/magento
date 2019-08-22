@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Catalog
- * @copyright  Copyright (c) 2006-2019 Magento, Inc. (http://www.magento.com)
+ * @copyright  Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -80,7 +80,7 @@ class Mage_Catalog_Product_CompareController extends Mage_Core_Controller_Front_
         }
 
         $productId = (int) $this->getRequest()->getParam('product');
-        if ($this->isProductAvailable($productId)
+        if ($productId
             && (Mage::getSingleton('log/visitor')->getId() || Mage::getSingleton('customer/session')->isLoggedIn())
         ) {
             $product = Mage::getModel('catalog/product')
@@ -106,8 +106,7 @@ class Mage_Catalog_Product_CompareController extends Mage_Core_Controller_Front_
      */
     public function removeAction()
     {
-        $productId = (int) $this->getRequest()->getParam('product');
-        if ($this->isProductAvailable($productId)) {
+        if ($productId = (int) $this->getRequest()->getParam('product')) {
             $product = Mage::getModel('catalog/product')
                 ->setStoreId(Mage::app()->getStore()->getId())
                 ->load($productId);
@@ -184,16 +183,5 @@ class Mage_Catalog_Product_CompareController extends Mage_Core_Controller_Front_
     {
         $this->_customerId = $id;
         return $this;
-    }
-
-    /**
-     * Check if product is available
-     *
-     * @param int $productId
-     * @return bool
-     */
-    public function isProductAvailable($productId)
-    {
-        return Mage::getModel('catalog/product')->load($productId)->isAvailable();
     }
 }
